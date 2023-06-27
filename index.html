@@ -231,17 +231,26 @@
                 <tbody>
                     <tr>
                         <td>
-                            * {
-                                margin: 0;
-                                padding: 0;
-                            }
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            body {
-                                width: 100%;
-                            }
+                            <ul>
+                                <li>* {
+                                    margin: 0;
+                                    padding: 0;
+                                    z-index: 0;
+                                }</li>
+                                <li>body {
+                                    width: 100%;
+                                }</li>
+                                <li>html, body {
+                                    overflow: visible;
+                                }</li>
+                                <li>html {
+                                    box-sizing: border-box;
+                                  }
+                                </li>
+                                <li>*, *:before, *:after {
+                                    box-sizing: inherit;
+                                </li>
+                            </ul>
                         </td>
                     </tr>
                 </tbody>
